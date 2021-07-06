@@ -1,0 +1,94 @@
+{
+  "name": "Favs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "@januswel/object-utilities": "^1.0.1",
+    "@react-native-community/async-storage": "^1.11.0",
+    "@react-native-community/clipboard": "^1.2.3",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/viewpager": "^4.1.4",
+    "@react-navigation/material-bottom-tabs": "^5.2.16",
+    "@react-navigation/native": "^5.7.3",
+    "@react-navigation/stack": "^5.9.0",
+    "@types/react-native-modal": "^4.1.1",
+    "@types/react-native-modalbox": "^1.4.8",
+    "@types/react-native-scrollable-tab-view": "^0.10.1",
+    "@types/react-native-share": "^3.3.0",
+    "@types/react-native-share-menu": "^2.2.0",
+    "@types/react-native-vector-icons": "^6.4.5",
+    "@types/react-navigation": "^3.4.0",
+    "@types/react-redux": "^7.1.9",
+    "@types/redux-thunk": "^2.1.0",
+    "react": "16.13.1",
+    "react-hook-form": "^6.4.0",
+    "react-native": "0.63.2",
+    "react-native-gesture-handler": "^1.7.0",
+    "react-native-get-random-values": "^1.4.0",
+    "react-native-html-parser": "^0.1.0",
+    "react-native-localize": "^1.4.1",
+    "react-native-modal": "^11.5.6",
+    "react-native-modalbox": "^2.0.0",
+    "react-native-paper": "^4.0.1",
+    "react-native-safe-area-context": "^3.1.4",
+    "react-native-safe-area-view": "^1.1.1",
+    "react-native-screens": "^2.10.1",
+    "react-native-scrollable-tab-view": "^1.0.0",
+    "react-native-share": "^3.8.3",
+    "react-native-share-menu": "^5.0.1",
+    "react-native-storage": "^1.0.1",
+    "react-native-swipe-list-view": "^3.2.3",
+    "react-native-vector-icons": "^7.0.0",
+    "react-native-webview": "^10.4.0",
+    "react-navigation": "^4.4.0",
+    "react-redux": "^7.2.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@types/jest": "^25.2.3",
+    "@types/react-native": "^0.63.2",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "prettier": "^2.0.4",
+    "react-test-renderer": "16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/example.app",
+        "build": "xcodebuild -workspace ios/Favs.xcworkspace -scheme Favs -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11 Pro"
+        }
+      }
+    }
+  }
+}
